@@ -187,7 +187,7 @@
                     <li class="nav-item">
                         <a href="./post/git-pull.php" class="nav-link">
                             <i class="nav-icon fas fa-cogs"></i>
-                            <p>Git Pull</p>
+                            <p>Git Pull -test</p>
                             <i class="fas fa-angle-right nav-icon float-right"></i>
                         </a>
                     </li>
