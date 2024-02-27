@@ -47,18 +47,18 @@
                                     </div>
                                     <select class="form-control select2" data-tags="true" name="referral">
                                         <option value="">N/A</option>
-                                        <option value="">Refinance</option>
-                                        <option value="">Purchase</option>
+                                        <option value="Refinance">Refinance</option>
+                                        <option value="Purchase">Purchase</option>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label>Property Address</label>
+                                <label>Property Address <strong class="text-danger">*</strong></label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-fw fa-briefcase"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" name="type" placeholder="Company Type">
+                                    <input type="text" class="form-control" name="type" placeholder="Property Address">
                                 </div>
                             </div>
 
