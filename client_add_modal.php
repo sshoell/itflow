@@ -49,7 +49,8 @@
                                         <option value="">N/A</option>
                                         <option value="Refinance">Refinance</option>
                                         <option value="Purchase">Purchase</option>
-                                </div>
+                                    </select>
+                            </div>
 
                             <div class="form-group">
                                 <label>Escrow Officer</label>
