@@ -27,7 +27,7 @@
                                                                 echo "active";
                                                             } ?>">
                         <i class="nav-icon fas fa-user-friends"></i>
-                        <p>Clients</p>
+                        <p>Orders</p>
                     </a>
                 </li>
 
