@@ -2,7 +2,7 @@
     <div class="modal-dialog">
         <div class="modal-content bg-dark">
             <div class="modal-header">
-                <h5 class="modal-title"><i class="fa fa-fw fa-user-plus mr-2"></i>Create <?php if($leads == 0){ echo "Client"; } else { echo "Lead"; } ?></h5>
+                <h5 class="modal-title"><i class="fa fa-fw fa-user-plus mr-2"></i>Create Client</h5>
                 <button type="button" class="close text-white" data-dismiss="modal">
                     <span>&times;</span>
                 </button>
@@ -51,17 +51,6 @@
                                         <option value="Purchase">Purchase</option>
                                 </div>
                             </div>
-
-                            <div class="form-group">
-                                <label>Property Address <strong class="text-danger">*</strong></label>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fa fa-fw fa-briefcase"></i></span>
-                                    </div>
-                                    <input type="text" class="form-control" name="type" placeholder="Property Address">
-                                </div>
-                            </div>
-
                             <div class="form-group">
                                 <label>Escrow Officer</label>
                                 <div class="input-group">
@@ -86,12 +75,16 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Website</label>
+                                <label>Real Estate Agent</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-fw fa-globe"></i></span>
                                     </div>
                                     <input type="text" class="form-control" name="website" placeholder="ex. google.com">
+                                </div>
+                                <div class="input-group-prepend">
+                                        <input type="checkbox" name="lead" value="1"> Buyer</input>
+                                        <input type="checkbox" name="lead" value="1"> Buyer</input>
                                 </div>
                             </div>
 
