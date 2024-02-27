@@ -50,7 +50,7 @@
                                         <option value="Refinance">Refinance</option>
                                         <option value="Purchase">Purchase</option>
                                 </div>
-                            </div>
+
                             <div class="form-group">
                                 <label>Escrow Officer</label>
                                 <div class="input-group">
@@ -62,14 +62,6 @@
                                         <option value="">Brenda Johnson</option>
                                         <option value="">Mike De La Mare</option>
                                         <option value="">Tina</option>
-                                        <?php
-
-                                        //$referral_sql = mysqli_query($mysqli, "SELECT * FROM categories WHERE category_type = 'Referral' AND category_archived_at IS NULL ORDER BY category_name ASC");
-                                        //while ($row = mysqli_fetch_array($referral_sql)) {
-                                           //$referral = nullable_htmlentities($row['category_name']); ?>
-                                            <option><?php //echo $referral; ?></option>
-                                        <?php// } ?>
-
                                     </select>
                                 </div>
                             </div>
@@ -83,8 +75,8 @@
                                     <input type="text" class="form-control" name="website" placeholder="ex. google.com">
                                 </div>
                                 <div class="input-group-prepend">
-                                        <input type="checkbox" name="lead" value="1"> Buyer</input>
-                                        <input type="checkbox" name="lead" value="1"> Buyer</input>
+                                        <input type="checkbox" name="lead" value="1">Buyer</input>
+                                        <input type="checkbox" name="lead" value="1">Seller</input>
                                 </div>
                             </div>
 
