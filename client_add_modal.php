@@ -18,10 +18,10 @@
                             <a class="nav-link active" data-toggle="pill" href="#pills-details">Details</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#pills-location">Location</a>
+                            <a class="nav-link" data-toggle="pill" href="#pills-location">Parties</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#pills-contact" id="contactNavPill">Contact</a>
+                            <a class="nav-link" data-toggle="pill" href="#pills-contact" id="contactNavPill">Policy</a>
                         </li>
                         <?php if ($config_module_enable_accounting) { ?>
                         <li class="nav-item">
@@ -40,17 +40,20 @@
                         <div class="tab-pane fade show active" id="pills-details">
 
                             <div class="form-group">
-                                <label>Name <strong class="text-danger">*</strong></label>
+                                <label>Order Type <strong class="text-danger">*</strong></label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-fw fa-user"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" name="name" placeholder="Name or Company" required autofocus>
+                                    <select class="form-control select2" data-tags="true" name="referral">
+                                        <option value="">N/A</option>
+                                        <option value="">Refinance</option>
+                                        <option value="">Purchase</option>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label>Industry</label>
+                                <label>Property Address</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-fw fa-briefcase"></i></span>
@@ -60,20 +63,23 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Referral</label>
+                                <label>Escrow Officer</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-fw fa-smile-wink"></i></span>
                                     </div>
                                     <select class="form-control select2" data-tags="true" name="referral">
                                         <option value="">N/A</option>
+                                        <option value="">Brenda Johnson</option>
+                                        <option value="">Mike De La Mare</option>
+                                        <option value="">Tina</option>
                                         <?php
 
-                                        $referral_sql = mysqli_query($mysqli, "SELECT * FROM categories WHERE category_type = 'Referral' AND category_archived_at IS NULL ORDER BY category_name ASC");
-                                        while ($row = mysqli_fetch_array($referral_sql)) {
-                                            $referral = nullable_htmlentities($row['category_name']); ?>
-                                            <option><?php echo $referral; ?></option>
-                                        <?php } ?>
+                                        //$referral_sql = mysqli_query($mysqli, "SELECT * FROM categories WHERE category_type = 'Referral' AND category_archived_at IS NULL ORDER BY category_name ASC");
+                                        //while ($row = mysqli_fetch_array($referral_sql)) {
+                                           //$referral = nullable_htmlentities($row['category_name']); ?>
+                                            <option><?php //echo $referral; ?></option>
+                                        <?php// } ?>
 
                                     </select>
                                 </div>
