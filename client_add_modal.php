@@ -75,8 +75,8 @@
                                     </div>
                                     <input type="text" class="form-control" name="website" placeholder="ex. google.com">
                                 </div>
-                                <div class="input-group-prepend">
-                                        <input type="checkbox" name="lead" value="1">Buyer</input>
+                                <div>
+                                        <input type="checkbox" name="lead" value="1"><label>Buyer</label></input>
                                         <input type="checkbox" name="lead" value="1">Seller</input>
                                 </div>
                             </div>
