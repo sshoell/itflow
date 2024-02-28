@@ -74,6 +74,8 @@
                                         <span class="input-group-text"><i class="fa fa-fw fa-globe"></i></span>
                                     </div>
                                     <input type="text" class="form-control" name="website" placeholder="ex. google.com">
+                                </div>
+                                <div class="input-group">
                                     <input type="checkbox" name="lead" value="1"><label>Buyer</label></input>
                                     <input type="checkbox" name="lead" value="1">Seller</input>
                                 </div>
